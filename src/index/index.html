@@ -4,9 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
     <title>Zencryption</title>
 </head>
 <body>
+
+    <div>
+        <ul class="tabs">
+            <li data-tab-target="#home" class="active tab">Home</li>
+            <li data-tab-target="#caesar" class="tab">Caesar</li>
+            <li data-tab-target="#vigenere" class="tab">Vigenere</li>
+            <li data-tab-target="#rsa" class="tab">RSA</li>
+            <li data-tab-target="#files" class="tab">Files</li>
+        </ul>
+    </div>
+
+    <div class="tab-content">
+
+        <div id="home" data-tab-content class="active">
+            <h1>Home</h1>
+            <p>This is Home</p>
+        </div>
+
+        <div id="caesar" data-tab-content>
+            <h1>Caesar</h1>
+            <p>This is Caesar</p>
+        </div>
+
+        <div id="vigenere" data-tab-content>
+            <h1>Vigenere</h1>
+            <p>This is Vigenere</p>
+        </div>
+
+        <div id="rsa" data-tab-content>
+            <h1>RSA</h1>
+            <p>This is RSA</p>
+        </div>
+
+        <div id="files" data-tab-content>
+            <h1>Files</h1>
+            <p>This is Files</p>
+        </div>
+
+    </div>
     
 </body>
 </html>
