@@ -22,20 +22,33 @@
   -ms-flex-pack: distribute;
       justify-content: space-around;
   list-style-type: none;
-  text-align: center;
-  font-size: 20px;
-  font-weight: bold;
   color: black;
-  border-bottom: 2px solid red;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+  border-bottom: 2px solid #f14b66;
 }
 
 .tab {
   cursor: pointer;
   padding: 10px;
   width: 100%;
+  border-radius: 10px;
 }
 
 .tab.active {
-  background-color: red;
+  background-color: #f14b66;
+  color: white;
+}
+
+.tab:hover {
+  background-color: rgba(241, 75, 102, 0.5);
+}
+
+.tab:hover.active {
+  background-color: #f14b66;
 }
 /*# sourceMappingURL=index.css.map */
