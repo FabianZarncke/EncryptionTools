@@ -90,8 +90,40 @@
         </div>
 
         <div id="vigenere" data-tab-content>
-            <h1>Vigenere</h1>
-            <p>This is Vigenere</p>
+            <div class="box">
+                <div class="controls">
+                    <div class="input-header">
+                        <h2>Plain Text</h2>
+                    </div>
+                    <div class="switch">
+                        <button id="switchBTN" onclick="switchInOut()"><span class="material-icons-round">swap_horiz</span></button>
+                    </div>
+                    <div class="output-header">
+                        <h2>Encrypted Text</h2>
+                    </div>
+                </div>
+                <div class="fields">
+                    <div class="input-field">
+                        <div class="input-field-field">
+                            <textarea id="inputField" placeholder="Type to encrypt" onkeydown="return keyTyped(event)" onkeyup="cipher()"></textarea>
+                            <button id="inputSaveBTN" onclick="saveInput()"><span class="material-icons-round">save</span</button>
+                        </div>
+                    </div>
+                    <div class="key-field">
+                        <div class="key-field-field">
+                            <input id="keyOnput" type="text" oninput="this.value = this.value.toUpperCase()" placeholder="KEY" onchange="cipher()">
+                        </div>
+                    </div>
+                    <div class="output-field">
+                        <div class="output-field-field">
+                            <textarea id="outpuField" placeholder="Encrypted Text" readonly></textarea>
+                            <button id="outputSaveBTN" onclick="saveOutput()"><span class="material-icons-round">save</span</button>          
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <a href="https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher"><h6>Learn about the Vigenere Encryption</h6></a>
+                </div>
         </div>
 
         <div id="rsa" data-tab-content>
