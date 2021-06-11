@@ -12,7 +12,7 @@
 </head>
 <body>
 
-    <div>
+    <div class="tabs-div">
         <ul class="tabs">
             <li data-tab-target="#home" class="active tab">Home</li>
             <li data-tab-target="#caesar" class="tab">Caesar</li>
@@ -117,18 +117,72 @@
                     <div class="output-field">
                         <div class="output-field-field">
                             <textarea id="outpuField" placeholder="Encrypted Text" readonly></textarea>
-                            <button id="outputSaveBTN" onclick="saveOutput()"><span class="material-icons-round">save</span</button>          
+                            <button id="outputSaveBTN" onclick="saveOutput()"><span class="material-icons-round">save</span></button>          
                         </div>
                     </div>
                 </div>
                 <div class="info">
                     <a href="https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher"><h6>Learn about the Vigenere Encryption</h6></a>
                 </div>
+            </div>
         </div>
 
         <div id="rsa" data-tab-content>
-            <h1>RSA</h1>
-            <p>This is RSA</p>
+            <div class="box">
+                <div class="sections">
+                    <div class="input">
+                        <div class="top">
+                            <div class="left">
+                                <div class="pInput">
+                                    <h3>p: Prime Number</h3>
+                                    <input id="pInput" type="text" placeholder="p" onfocusout="checkPrimeNum(this)">
+                                </div>
+                                <div class="qInput">
+                                    <h3>q: Prime Number</h3>
+                                    <input id="qInput" type="text" placeholder="q" onfocusout="checkPrimeNum(this)">
+                                </div>
+                            </div>
+                            <div class="middle">
+                                <span class="material-icons-round">arrow_forward</span>
+                            </div>
+                            <div class="right">
+                                <div class="nOutput">
+                                    <h3>n = p*q</h3>
+                                    <input id="nOutput" type="text" placeholder="n" readonly>
+                                </div>
+                                <div class="mOutput">
+                                    <h3>m = (p-1)*(q-1)</h3>
+                                    <input id="mOutput" type="text" placeholder="m" readonly>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="left">
+                                <div class="eInput">
+                                    <h3>e: Prime number, smaller m, no part of prime factorisation of m</h3>
+                                    <input id="eInput" type="text" placeholder="e" onfocusout="checkE(this)">
+                                </div>
+                            </div>
+                        </div>
+                        <button>Generate Keys</button>
+                    </div>
+                    <div class="output">
+                        <h2>Keys</h2>
+                        <div class="publicKey">
+                            <h3>Public Key</h3>
+                            <input id="pukOutput" type="text" placeholder="Public Key" readonly>
+                        </div>
+                        <div class="privateKey">
+                            <h3>Private Key</h3>
+                            <input id="pkOutput" type="text" placeholder="Private Key" readonly>
+                        </div>
+                        <button>Save Keys<span class="material-icons-round">save</span></button>
+                    </div>
+                </div>
+                <div class="info">
+                    <a href="https://en.wikipedia.org/wiki/RSA_(cryptosystem)"><h6>Learn about the RSA</h6></a>
+                </div>
+            </div>
         </div>
 
         <div id="files" data-tab-content>
