@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round">
     <script src="index.js" defer></script>
     <title>Zencryption</title>
 </head>
@@ -50,8 +52,41 @@
         </div>
 
         <div id="caesar" data-tab-content>
-            <h1>Caesar</h1>
-            <p>This is Caesar</p>
+            <div class="box">
+                <div class="controls">
+                    <div class="input-header">
+                        <h2>Plain Text</h2>
+                    </div>
+                    <div class="switch">
+                        <button id="switchBTN" onclick="switchInOut()"><span class="material-icons-round">swap_horiz</span></button>
+                    </div>
+                    <div class="output-header">
+                        <h2>Encrypted Text</h2>
+                    </div>
+                </div>
+                <div class="fields">
+                    <div class="input-field">
+                        <div class="input-field-field">
+                            <textarea id="inputField" placeholder="Type to encrypt" onkeydown="return keyTyped(event)" onkeyup="cipher()"></textarea>
+                            <button id="inputSaveBTN" onclick="saveInput()"><span class="material-icons-round">save</span</button>
+                        </div>
+                    </div>
+                    <div class="key-field">
+                        <div class="key-field-field">
+                            <input id="keyOnput" type="number" placeholder="Key" step="1" value="3" min="1" onchange="cipher()">
+                        </div>
+                    </div>
+                    <div class="output-field">
+                        <div class="output-field-field">
+                            <textarea id="outpuField" placeholder="Encrypted Text" readonly></textarea>
+                            <button id="outputSaveBTN" onclick="saveOutput()"><span class="material-icons-round">save</span</button>          
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <a href="https://en.wikipedia.org/wiki/Caesar_cipher"><h6>Learn about the Caesar Cipher</h6></a>
+                </div>
+            </div>
         </div>
 
         <div id="vigenere" data-tab-content>
