@@ -189,7 +189,7 @@
           transform: scale(1.1);
 }
 
-#home button {
+#infoModalOpenBTB {
   position: absolute;
   bottom: 25px;
   right: 25px;
@@ -206,14 +206,14 @@
   transition: all .2s ease-in-out;
 }
 
-#home button:hover {
+#infoModalOpenBTB:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   -webkit-box-shadow: 0px 0px 10px 0px rgba(241, 75, 102, 0.5);
           box-shadow: 0px 0px 10px 0px rgba(241, 75, 102, 0.5);
 }
 
-#home .modal {
+.modal {
   display: none;
   position: fixed;
   z-index: 1;
@@ -227,7 +227,7 @@
   background-color: rgba(0, 0, 0, 0.75);
 }
 
-#home .modal .modal-content {
+.modal .modal-content {
   background-color: white;
   margin: auto;
   padding: 20px;
@@ -235,7 +235,7 @@
   width: 50%;
 }
 
-#home .modal .modal-content .header {
+.modal .modal-content .header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -247,7 +247,7 @@
           justify-content: flex-end;
 }
 
-#home .modal .modal-content .header span {
+.modal .modal-content .header span {
   color: rgba(241, 75, 102, 0.5);
   font-size: 40px;
   border-radius: 10px;
@@ -256,13 +256,13 @@
   transition: all .2s ease-in-out;
 }
 
-#home .modal .modal-content .header span:hover {
+.modal .modal-content .header span:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   color: #f14b66;
 }
 
-#home .modal .modal-content .content p {
+.modal .modal-content .content p {
   font-size: 24px;
   text-align: center;
   padding: 20px;

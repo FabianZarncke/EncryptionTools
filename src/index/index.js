@@ -1,9 +1,9 @@
 const tabs = document.querySelectorAll('[data-tab-target]') //loading tabs
 const tabContents = document.querySelectorAll('[data-tab-content]') //loading tab contents
 const tabButtons = document.querySelectorAll('[data-tab-button]') //loading tab buttons
-const homeInfoModal = document.getElementById('homeInfoModal') //loading homeInfoModal
-const homeInfoModalOpenBTB = document.getElementById('homeInfoModalOpenBTB') //loading homeInfoModalOpenBTN
-const homeInfoModalCloseBTN = document.getElementById('homeInfoModalCloseBTN') //loading homeInfoModalCloseBTN
+const infoModal = document.getElementById('infoModal') //loading InfoModal
+const infoModalOpenBTB = document.getElementById('infoModalOpenBTB') //loading InfoModalOpenBTN
+const infoModalCloseBTN = document.getElementById('infoModalCloseBTN') //loading InfoModalCloseBTN
 
 //tabLayout functionality
 tabs.forEach(tab => {
@@ -39,17 +39,17 @@ tabButtons.forEach(btn => {
 
 //---
 
-//homeInfoModal functionality
-homeInfoModalOpenBTB.onclick = function() {
-    homeInfoModal.style.display = "block"
+//InfoModal functionality
+infoModalOpenBTB.onclick = function() {
+    infoModal.style.display = "block"
 }
 
-homeInfoModalCloseBTN.onclick = function() {
-    homeInfoModal.style.display = "none"
+infoModalCloseBTN.onclick = function() {
+    infoModal.style.display = "none"
 }
 
 window.onclick = function() {
-    if (event.target == homeInfoModal) {
-        homeInfoModal.style.display = "none"
+    if (event.target == infoModal) {
+        infoModal.style.display = "none"
     }
 }
