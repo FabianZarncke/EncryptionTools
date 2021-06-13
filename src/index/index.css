@@ -189,6 +189,239 @@
           transform: scale(1.1);
 }
 
+#caesar .box {
+  -webkit-box-shadow: 0px 0px 10px #f14b66;
+          box-shadow: 0px 0px 10px #f14b66;
+  border-radius: 10px;
+  margin: 25px 100px;
+  padding: 25px;
+}
+
+#caesar .box .controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#caesar .box .controls .input-header {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#caesar .box .controls .input-header h2 {
+  color: black;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  text-decoration: underline;
+}
+
+#caesar .box .controls .switch {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#caesar .box .controls .switch button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#caesar .box .controls .switch button span {
+  color: black;
+  font-size: 36px;
+  font-weight: 700;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+#caesar .box .controls .switch button:hover span {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#caesar .box .controls .switch button:active span {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+#caesar .box .controls .output-header {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#caesar .box .controls .output-header h2 {
+  color: black;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  text-decoration: underline;
+}
+
+#caesar .box .fields {
+  border: 1px solid green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#caesar .box .fields .input-field {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#caesar .box .fields .input-field .input-field-field {
+  -webkit-box-shadow: inset 0px 0px 5px #f14b66;
+          box-shadow: inset 0px 0px 5px #f14b66;
+  width: 100%;
+  height: 450px;
+  border-radius: 5px;
+  margin: 10px;
+  position: relative;
+}
+
+#caesar .box .fields .input-field .input-field-field textarea {
+  border: none;
+  background: transparent;
+  resize: none;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  outline: none;
+  color: black;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+#caesar .box .fields .input-field .input-field-field textarea::-webkit-input-placeholder {
+  color: #e5e5e5;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+#caesar .box .fields .input-field .input-field-field textarea:-ms-input-placeholder {
+  color: #e5e5e5;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+#caesar .box .fields .input-field .input-field-field textarea::-ms-input-placeholder {
+  color: #e5e5e5;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+#caesar .box .fields .input-field .input-field-field textarea::placeholder {
+  color: #e5e5e5;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+#caesar .box .fields .input-field .input-field-field button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
+
+#caesar .box .fields .input-field .input-field-field button span {
+  color: #f14b66;
+  font-size: 36px;
+  font-weight: 700;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+#caesar .box .fields .input-field .input-field-field button:hover span {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#caesar .box .fields .input-field .input-field-field button:active span {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+#caesar .box .fields .key-field {
+  border: 1px solid blue;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#caesar .box .fields .output-field {
+  border: 1px solid blue;
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 #infoModalOpenBTB {
   position: fixed;
   bottom: 25px;

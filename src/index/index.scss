@@ -16,6 +16,7 @@ $secondary: rgba(0,
 0,
 0,
 1);
+$secondary2: rgba(229, 229, 229, 1);
 //---
 //Overwrite
 * {
@@ -171,6 +172,163 @@ $secondary: rgba(0,
 }
 
 //---
+
+//Caesar
+#caesar .box {
+    box-shadow: 0px 0px 10px $primary;
+    border-radius: 10px;
+    margin: 25px 100px;
+    padding: 25px;
+}
+
+#caesar .box .controls {
+    //border: 1px solid green;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#caesar .box .controls .input-header {
+    flex: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#caesar .box .controls .input-header h2 {
+    color: $secondary;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    text-decoration: underline;
+}
+
+#caesar .box .controls .switch {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#caesar .box .controls .switch button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#caesar .box .controls .switch button span {
+    color: $secondary;
+    font-size: 36px;
+    font-weight: 700;
+    transition: all .2s ease-in-out;
+}
+
+#caesar .box .controls .switch button:hover span {
+    transform: scale(1.2);
+}
+
+#caesar .box .controls .switch button:active span {
+    transform: scale(0.8);
+}
+
+#caesar .box .controls .output-header {
+    flex: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#caesar .box .controls .output-header h2 {
+    color: $secondary;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    text-decoration: underline;
+}
+
+#caesar .box .fields {
+    border: 1px solid green;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#caesar .box .fields .input-field {
+    flex: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#caesar .box .fields .input-field .input-field-field {
+    box-shadow: inset 0px 0px 5px $primary;
+    width: 100%;
+    height: 450px;
+    border-radius: 5px;
+    margin: 10px;
+    position: relative;
+}
+
+#caesar .box .fields .input-field .input-field-field textarea {
+    border: none;
+    background: transparent;
+    resize: none;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    outline: none;
+    color: $secondary;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+#caesar .box .fields .input-field .input-field-field textarea::placeholder {
+    color: $secondary2;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+#caesar .box .fields .input-field .input-field-field button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+}
+
+#caesar .box .fields .input-field .input-field-field button span{
+    color: $primary;
+    font-size: 36px;
+    font-weight: 700;
+    transition: all .2s ease-in-out;
+}
+
+#caesar .box .fields .input-field .input-field-field button:hover span {
+    transform: scale(1.1);
+}
+
+#caesar .box .fields .input-field .input-field-field button:active span {
+    transform: scale(0.8);
+}
+
+#caesar .box .fields .key-field {
+    border: 1px solid blue;
+    flex: 1;
+}
+
+#caesar .box .fields .output-field {
+    border: 1px solid blue;
+    flex: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+//--
+
 //InfoModal
 #infoModalOpenBTB {
     position: fixed;
@@ -239,3 +397,4 @@ $secondary: rgba(0,
     text-align: center;
     padding: 20px;
 }
+//---
