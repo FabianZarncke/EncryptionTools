@@ -716,6 +716,7 @@ $third: rgba(82, 196, 224, 1);
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 
 #rsa .box .sections .input input {
@@ -746,14 +747,12 @@ $third: rgba(82, 196, 224, 1);
 
 #rsa .box .sections .input .top {
     width: 100%;
-    border: 1px solid green;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 #rsa .box .sections .input .top .left {
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -768,16 +767,59 @@ $third: rgba(82, 196, 224, 1);
     margin: 10px 0px;
 }
 
-#rsa .box .sections .input .top .middle {
-    border: 1px solid yellow;
+#rsa .box .sections .input .top .middle span {
+    font-size: 50px;
+    color: $primary;
 }
 
 #rsa .box .sections .input .top .right {
-    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
+}
+
+#rsa .box .sections .input .top .right .nOutput {
+    margin: 10px 0px;
+}
+
+#rsa .box .sections .input .top .right .mOutput {
+    margin: 10px 0px;
 }
 
 #rsa .box .sections .input .bottom {
-    border: 1px solid purple;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#rsa .box .sections .input .bottom .left {
+    width: 200px;
+}
+
+#rsa .box .sections .input .bottom .left .eInput {
+    margin: 10px 0px;
+}
+
+#rsa .box .sections .input .bottom .left .eInput h3 {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+#rsa .box .sections .input button {
+    border: none;
+    background: $primary;
+    border-radius: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    padding: 10px 20px;
+    color: $base;
+    position: absolute;
+    bottom: -25px;
+    cursor: pointer;
 }
 
 

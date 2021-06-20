@@ -1029,6 +1029,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
 }
 
 #rsa .box .sections .input input {
@@ -1084,7 +1085,6 @@
 
 #rsa .box .sections .input .top {
   width: 100%;
-  border: 1px solid green;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1097,7 +1097,6 @@
 }
 
 #rsa .box .sections .input .top .left {
-  border: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1121,16 +1120,74 @@
   margin: 10px 0px;
 }
 
-#rsa .box .sections .input .top .middle {
-  border: 1px solid yellow;
+#rsa .box .sections .input .top .middle span {
+  font-size: 50px;
+  color: #f14b66;
 }
 
 #rsa .box .sections .input .top .right {
-  border: 1px solid blue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#rsa .box .sections .input .top .right .nOutput {
+  margin: 10px 0px;
+}
+
+#rsa .box .sections .input .top .right .mOutput {
+  margin: 10px 0px;
 }
 
 #rsa .box .sections .input .bottom {
-  border: 1px solid purple;
+  width: 100%;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#rsa .box .sections .input .bottom .left {
+  width: 200px;
+}
+
+#rsa .box .sections .input .bottom .left .eInput {
+  margin: 10px 0px;
+}
+
+#rsa .box .sections .input .bottom .left .eInput h3 {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+#rsa .box .sections .input button {
+  border: none;
+  background: #f14b66;
+  border-radius: 20px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  padding: 10px 20px;
+  color: white;
+  position: absolute;
+  bottom: -25px;
+  cursor: pointer;
 }
 
 #rsa .box .sections .output {
