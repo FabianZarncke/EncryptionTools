@@ -591,6 +591,408 @@
   color: #52c4e0;
 }
 
+#vigenere .box {
+  -webkit-box-shadow: 0px 0px 10px #f14b66;
+          box-shadow: 0px 0px 10px #f14b66;
+  border-radius: 10px;
+  margin: 25px 100px;
+  padding: 25px;
+}
+
+#vigenere .box .controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#vigenere .box .controls .input-header {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#vigenere .box .controls .input-header h2 {
+  color: black;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  text-decoration: underline;
+}
+
+#vigenere .box .controls .switch {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#vigenere .box .controls .switch button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#vigenere .box .controls .switch button span {
+  color: black;
+  font-size: 36px;
+  font-weight: 700;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+#vigenere .box .controls .switch button:hover span {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#vigenere .box .controls .switch button:active span {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+#vigenere .box .controls .output-header {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#vigenere .box .controls .output-header h2 {
+  color: black;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  text-decoration: underline;
+}
+
+#vigenere .box .fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#vigenere .box .fields .input-field {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#vigenere .box .fields .input-field .input-field-field {
+  -webkit-box-shadow: inset 0px 0px 5px #f14b66;
+          box-shadow: inset 0px 0px 5px #f14b66;
+  width: 100%;
+  height: 450px;
+  border-radius: 5px;
+  margin: 10px;
+  position: relative;
+}
+
+#vigenere .box .fields .input-field .input-field-field textarea {
+  border: none;
+  background: transparent;
+  resize: none;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  outline: none;
+  color: black;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+#vigenere .box .fields .input-field .input-field-field textarea::-webkit-input-placeholder {
+  color: #e5e5e5;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+#vigenere .box .fields .input-field .input-field-field textarea:-ms-input-placeholder {
+  color: #e5e5e5;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+#vigenere .box .fields .input-field .input-field-field textarea::-ms-input-placeholder {
+  color: #e5e5e5;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+#vigenere .box .fields .input-field .input-field-field textarea::placeholder {
+  color: #e5e5e5;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+#vigenere .box .fields .input-field .input-field-field button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
+
+#vigenere .box .fields .input-field .input-field-field button span {
+  color: #f14b66;
+  font-size: 36px;
+  font-weight: 700;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+#vigenere .box .fields .input-field .input-field-field button:hover span {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#vigenere .box .fields .input-field .input-field-field button:active span {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+#vigenere .box .fields .key-field {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#vigenere .box .fields .key-field .key-field-field {
+  height: 50px;
+  width: 100%;
+  max-width: 200px;
+  -webkit-box-shadow: inset 0px 0px 5px #f14b66;
+          box-shadow: inset 0px 0px 5px #f14b66;
+  border-radius: 5px;
+}
+
+#vigenere .box .fields .key-field .key-field-field input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: transparent;
+  outline: none;
+  color: black;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+}
+
+#vigenere .box .fields .key-field .key-field-field input::-webkit-input-placeholder {
+  color: #e5e5e5;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+#vigenere .box .fields .key-field .key-field-field input:-ms-input-placeholder {
+  color: #e5e5e5;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+#vigenere .box .fields .key-field .key-field-field input::-ms-input-placeholder {
+  color: #e5e5e5;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+#vigenere .box .fields .key-field .key-field-field input::placeholder {
+  color: #e5e5e5;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+#vigenere .box .fields .output-field {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#vigenere .box .fields .output-field .output-field-field {
+  -webkit-box-shadow: inset 0px 0px 5px #f14b66;
+          box-shadow: inset 0px 0px 5px #f14b66;
+  width: 100%;
+  height: 450px;
+  border-radius: 5px;
+  margin: 10px;
+  position: relative;
+}
+
+#vigenere .box .fields .output-field .output-field-field textarea {
+  border: none;
+  background: transparent;
+  resize: none;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  outline: none;
+  color: black;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+#vigenere .box .fields .output-field .output-field-field textarea::-webkit-input-placeholder {
+  color: #e5e5e5;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+#vigenere .box .fields .output-field .output-field-field textarea:-ms-input-placeholder {
+  color: #e5e5e5;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+#vigenere .box .fields .output-field .output-field-field textarea::-ms-input-placeholder {
+  color: #e5e5e5;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+#vigenere .box .fields .output-field .output-field-field textarea::placeholder {
+  color: #e5e5e5;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+#vigenere .box .fields .output-field .output-field-field button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
+
+#vigenere .box .fields .output-field .output-field-field button span {
+  color: #f14b66;
+  font-size: 36px;
+  font-weight: 700;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+#vigenere .box .fields .output-field .output-field-field button:hover span {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#vigenere .box .fields .output-field .output-field-field button:active span {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+#vigenere .box .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+}
+
+#vigenere .box .info a {
+  text-decoration: none;
+}
+
+#vigenere .box .info a h6 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #52c4e0;
+}
+
 #infoModalOpenBTB {
   position: fixed;
   bottom: 25px;
