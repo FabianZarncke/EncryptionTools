@@ -993,6 +993,152 @@
   color: #52c4e0;
 }
 
+#rsa .box {
+  -webkit-box-shadow: 0px 0px 10px #f14b66;
+          box-shadow: 0px 0px 10px #f14b66;
+  border-radius: 10px;
+  margin: 25px 100px;
+  padding: 25px;
+}
+
+#rsa .box .sections {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#rsa .box .sections .input {
+  border: 1px solid #F14B66;
+  border-radius: 20px;
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#rsa .box .sections .input input {
+  background: white;
+  border: none;
+  -webkit-box-shadow: inset 0px 0px 5px #F14B66;
+          box-shadow: inset 0px 0px 5px #F14B66;
+  border-radius: 5px;
+  width: 200px;
+  height: 50px;
+  color: black;
+  padding: 10px;
+}
+
+#rsa .box .sections .input input::-webkit-input-placeholder {
+  color: #e5e5e5;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+#rsa .box .sections .input input:-ms-input-placeholder {
+  color: #e5e5e5;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+#rsa .box .sections .input input::-ms-input-placeholder {
+  color: #e5e5e5;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+#rsa .box .sections .input input::placeholder {
+  color: #e5e5e5;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+#rsa .box .sections .input h3 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+#rsa .box .sections .input .top {
+  width: 100%;
+  border: 1px solid green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#rsa .box .sections .input .top .left {
+  border: 1px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#rsa .box .sections .input .top .left .pInput {
+  margin: 10px 0px;
+}
+
+#rsa .box .sections .input .top .left .qInput {
+  margin: 10px 0px;
+}
+
+#rsa .box .sections .input .top .middle {
+  border: 1px solid yellow;
+}
+
+#rsa .box .sections .input .top .right {
+  border: 1px solid blue;
+}
+
+#rsa .box .sections .input .bottom {
+  border: 1px solid purple;
+}
+
+#rsa .box .sections .output {
+  border: 1px solid #F14B66;
+  border-radius: 20px;
+  padding: 40px;
+}
+
 #infoModalOpenBTB {
   position: fixed;
   bottom: 25px;

@@ -692,6 +692,100 @@ $third: rgba(82, 196, 224, 1);
     color: $third;
 }
 
+//--
+
+//RSA
+#rsa .box {
+    box-shadow: 0px 0px 10px $primary;
+    border-radius: 10px;
+    margin: 25px 100px;
+    padding: 25px;
+}
+
+#rsa .box .sections {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#rsa .box .sections .input {
+    border: 1px solid #F14B66;
+    border-radius: 20px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#rsa .box .sections .input input {
+    background: $base;
+    border: none;
+    box-shadow: inset 0px 0px 5px #F14B66;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    color: $secondary;
+    padding: 10px;
+}
+
+#rsa .box .sections .input input::placeholder {
+    color: $secondary2;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+#rsa .box .sections .input h3 {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+#rsa .box .sections .input .top {
+    width: 100%;
+    border: 1px solid green;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#rsa .box .sections .input .top .left {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
+}
+
+#rsa .box .sections .input .top .left .pInput {
+    margin: 10px 0px;
+}
+
+#rsa .box .sections .input .top .left .qInput {
+    margin: 10px 0px;
+}
+
+#rsa .box .sections .input .top .middle {
+    border: 1px solid yellow;
+}
+
+#rsa .box .sections .input .top .right {
+    border: 1px solid blue;
+}
+
+#rsa .box .sections .input .bottom {
+    border: 1px solid purple;
+}
+
+
+#rsa .box .sections .output {
+    border: 1px solid #F14B66;
+    border-radius: 20px;
+    padding: 40px;
+}
 
 //--
 
