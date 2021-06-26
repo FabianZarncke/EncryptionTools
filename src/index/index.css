@@ -1187,7 +1187,7 @@
   color: white;
   position: absolute;
   bottom: -25px;
-  cursor: pointer;
+  cursor: 'pointer';
 }
 
 #rsa .box .sections .output {

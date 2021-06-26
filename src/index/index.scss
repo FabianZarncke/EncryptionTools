@@ -795,7 +795,7 @@ $third: rgba(82, 196, 224, 1);
     justify-content: space-between;
 }
 
-#rsa .box .sections .input .bottom .left {
+#rsa .box .sections .input .bottom .left {  
     width: 200px;
 }
 
@@ -819,7 +819,7 @@ $third: rgba(82, 196, 224, 1);
     color: $base;
     position: absolute;
     bottom: -25px;
-    cursor: pointer;
+    cursor: 'pointer';
 }
 
 
