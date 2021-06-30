@@ -999,8 +999,9 @@
   -webkit-box-shadow: 0px 0px 10px #f14b66;
           box-shadow: 0px 0px 10px #f14b66;
   border-radius: 10px;
-  margin: 25px 100px;
-  padding: 25px;
+  margin: 75px 100px;
+  padding: 80px 40px;
+  padding-bottom: 20px;
 }
 
 #rsa .box .sections {
@@ -1195,14 +1196,28 @@
 }
 
 #rsa .box .sections .input button:hover {
-  -webkit-transform: scaleX(1.05);
-          transform: scaleX(1.05);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 #rsa .box .sections .output {
   border: 1px solid #F14B66;
   border-radius: 20px;
   padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
 }
 
 #rsa .box .sections .output h2 {
@@ -1221,15 +1236,187 @@
   -webkit-box-shadow: inset 0px 0px 5px #F14B66;
           box-shadow: inset 0px 0px 5px #F14B66;
   border-radius: 5px;
-  width: 200px;
+  width: 400px;
   height: 50px;
   color: black;
   padding: 10px;
   outline: none;
 }
 
+#rsa .box .sections .output input::-webkit-input-placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  color: #e5e5e5;
+  text-align: center;
+}
+
+#rsa .box .sections .output input:-ms-input-placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  color: #e5e5e5;
+  text-align: center;
+}
+
+#rsa .box .sections .output input::-ms-input-placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  color: #e5e5e5;
+  text-align: center;
+}
+
+#rsa .box .sections .output input::placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  color: #e5e5e5;
+  text-align: center;
+}
+
 #rsa .box .sections .output .publicKey {
-  margin: 40px 0px;
+  margin: 20px 0px;
+}
+
+#rsa .box .sections .output .privateKey {
+  margin: 20px 0px;
+}
+
+#rsa .box .sections .output button {
+  border: none;
+  background: #f14b66;
+  border-radius: 20px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  padding: 10px 20px;
+  color: white;
+  position: absolute;
+  bottom: -25px;
+  cursor: pointer;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#rsa .box .sections .output button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#rsa .box .sections .output button span {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px 10px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+#rsa .box .sections .output button:hover span {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#rsa .box .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+}
+
+#rsa .box .info a {
+  text-decoration: none;
+}
+
+#rsa .box .info a h6 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #52c4e0;
+}
+
+#files .box {
+  -webkit-box-shadow: 0px 0px 10px #f14b66;
+          box-shadow: 0px 0px 10px #f14b66;
+  border-radius: 10px;
+  margin: 75px 100px;
+  padding: 25px;
+}
+
+#files .box .header {
+  color: black;
+  padding: 0px 0px 20px 0px;
+}
+
+#files .box .files-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+#files .box .files-field .file {
+  background: white;
+  border: 1px solid #f14b66;
+  border-radius: 10px;
+  width: 250px;
+  height: 300px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  margin: 10px;
+  cursor: pointer;
+}
+
+#files .box .files-field .file:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#files .box .files-field .file p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 42px;
 }
 
 #infoModalOpenBTB {

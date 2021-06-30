@@ -703,8 +703,9 @@ $third: rgba(82,
 #rsa .box {
     box-shadow: 0px 0px 10px $primary;
     border-radius: 10px;
-    margin: 25px 100px;
-    padding: 25px;
+    margin: 75px 100px;
+    padding: 80px 40px;
+    padding-bottom: 20px;
 }
 
 #rsa .box .sections {
@@ -829,13 +830,18 @@ $third: rgba(82,
 }
 
 #rsa .box .sections .input button:hover {
-    transform: scaleX(1.05);
+    transform: scale(1.1);
 }
 
 #rsa .box .sections .output {
     border: 1px solid #F14B66;
     border-radius: 20px;
     padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
 }
 
 #rsa .box .sections .output h2 {
@@ -852,15 +858,128 @@ $third: rgba(82,
     border: none;
     box-shadow: inset 0px 0px 5px #F14B66;
     border-radius: 5px;
-    width: 200px;
+    width: 400px;
     height: 50px;
     color: $secondary;
     padding: 10px;
     outline: none;
 }
 
+#rsa .box .sections .output input::placeholder {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: $secondary2;
+    text-align: center;
+}
+
 #rsa .box .sections .output .publicKey {
-    margin: 40px 0px;
+    margin: 20px 0px;
+}
+
+#rsa .box .sections .output .privateKey {
+    margin: 20px 0px;
+}
+
+#rsa .box .sections .output button {
+    border: none;
+    background: $primary;
+    border-radius: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    padding: 10px 20px;
+    color: $base;
+    position: absolute;
+    bottom: -25px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#rsa .box .sections .output button:hover {
+    transform: scale(1.1);
+}
+
+#rsa .box .sections .output button span {
+    align-items: center;
+    margin: 0px 10px;
+    transition: all .2s ease-in-out;
+}
+
+#rsa .box .sections .output button:hover span {
+    transform: scale(1.2);
+}
+
+#rsa .box .info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+#rsa .box .info a {
+    text-decoration: none;
+}
+
+#rsa .box .info a h6 {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration-line: underline;
+    color: $third;
+}
+
+//--
+//Files
+#files .box {
+    box-shadow: 0px 0px 10px $primary;
+    border-radius: 10px;
+    margin: 75px 100px;
+    padding: 25px;
+}
+
+#files .box .header {
+    color: $secondary;
+    padding: 0px 0px 20px 0px;
+}
+
+#files .box .files-field {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#files .box .files-field .file {
+    background: $base;
+    border: 1px solid $primary;
+    border-radius: 10px;
+    width: 250px;
+    height: 300px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    transition: all .2s ease-in-out;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#files .box .files-field .file:hover {
+    transform: scale(1.1);
+}
+
+#files .box .files-field .file p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 42px;
 }
 
 //--
