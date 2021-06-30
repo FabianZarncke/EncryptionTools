@@ -16,8 +16,14 @@ $secondary: rgba(0,
 0,
 0,
 1);
-$secondary2: rgba(229, 229, 229, 1);
-$third: rgba(82, 196, 224, 1);
+$secondary2: rgba(229,
+229,
+229,
+1);
+$third: rgba(82,
+196,
+224,
+1);
 //---
 //Overwrite
 * {
@@ -173,13 +179,13 @@ $third: rgba(82, 196, 224, 1);
 }
 
 //---
-
 //Caesar
 #caesar .box {
     box-shadow: 0px 0px 10px $primary;
     border-radius: 10px;
-    margin: 25px 100px;
-    padding: 25px;
+    margin: 75px 100px;
+    padding: 80px 40px;
+    padding-bottom: 20px;
 }
 
 #caesar .box .controls {
@@ -210,7 +216,7 @@ $third: rgba(82, 196, 224, 1);
     justify-content: center;
 }
 
-#caesar .box .controls .switch button{
+#caesar .box .controls .switch button {
     background: transparent;
     border: none;
     cursor: pointer;
@@ -298,7 +304,7 @@ $third: rgba(82, 196, 224, 1);
     background: transparent;
 }
 
-#caesar .box .fields .input-field .input-field-field button span{
+#caesar .box .fields .input-field .input-field-field button span {
     color: $primary;
     font-size: 36px;
     font-weight: 700;
@@ -394,7 +400,7 @@ $third: rgba(82, 196, 224, 1);
     background: transparent;
 }
 
-#caesar .box .fields .output-field .output-field-field button span{
+#caesar .box .fields .output-field .output-field-field button span {
     color: $primary;
     font-size: 36px;
     font-weight: 700;
@@ -433,13 +439,13 @@ $third: rgba(82, 196, 224, 1);
 }
 
 //--
-
 //Vigenere
 #vigenere .box {
     box-shadow: 0px 0px 10px $primary;
     border-radius: 10px;
-    margin: 25px 100px;
-    padding: 25px;
+    margin: 75px 100px;
+    padding: 80px 40px;
+    padding-bottom: 20px;
 }
 
 #vigenere .box .controls {
@@ -470,7 +476,7 @@ $third: rgba(82, 196, 224, 1);
     justify-content: center;
 }
 
-#vigenere .box .controls .switch button{
+#vigenere .box .controls .switch button {
     background: transparent;
     border: none;
     cursor: pointer;
@@ -558,7 +564,7 @@ $third: rgba(82, 196, 224, 1);
     background: transparent;
 }
 
-#vigenere .box .fields .input-field .input-field-field button span{
+#vigenere .box .fields .input-field .input-field-field button span {
     color: $primary;
     font-size: 36px;
     font-weight: 700;
@@ -654,7 +660,7 @@ $third: rgba(82, 196, 224, 1);
     background: transparent;
 }
 
-#vigenere .box .fields .output-field .output-field-field button span{
+#vigenere .box .fields .output-field .output-field-field button span {
     color: $primary;
     font-size: 36px;
     font-weight: 700;
@@ -693,7 +699,6 @@ $third: rgba(82, 196, 224, 1);
 }
 
 //--
-
 //RSA
 #rsa .box {
     box-shadow: 0px 0px 10px $primary;
@@ -795,7 +800,7 @@ $third: rgba(82, 196, 224, 1);
     justify-content: space-between;
 }
 
-#rsa .box .sections .input .bottom .left {  
+#rsa .box .sections .input .bottom .left {
     width: 200px;
 }
 
@@ -819,9 +824,13 @@ $third: rgba(82, 196, 224, 1);
     color: $base;
     position: absolute;
     bottom: -25px;
-    cursor: 'pointer';
+    cursor: pointer;
+    transition: all .2s ease-in-out;
 }
 
+#rsa .box .sections .input button:hover {
+    transform: scaleX(1.05);
+}
 
 #rsa .box .sections .output {
     border: 1px solid #F14B66;
@@ -829,8 +838,32 @@ $third: rgba(82, 196, 224, 1);
     padding: 40px;
 }
 
-//--
+#rsa .box .sections .output h2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: $secondary;
+}
 
+#rsa .box .sections .output input {
+    background: $base;
+    border: none;
+    box-shadow: inset 0px 0px 5px #F14B66;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    color: $secondary;
+    padding: 10px;
+    outline: none;
+}
+
+#rsa .box .sections .output .publicKey {
+    margin: 40px 0px;
+}
+
+//--
 //InfoModal
 #infoModalOpenBTB {
     position: fixed;
@@ -899,4 +932,5 @@ $third: rgba(82, 196, 224, 1);
     text-align: center;
     padding: 20px;
 }
+
 //---

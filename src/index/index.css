@@ -193,8 +193,9 @@
   -webkit-box-shadow: 0px 0px 10px #f14b66;
           box-shadow: 0px 0px 10px #f14b66;
   border-radius: 10px;
-  margin: 25px 100px;
-  padding: 25px;
+  margin: 75px 100px;
+  padding: 80px 40px;
+  padding-bottom: 20px;
 }
 
 #caesar .box .controls {
@@ -595,8 +596,9 @@
   -webkit-box-shadow: 0px 0px 10px #f14b66;
           box-shadow: 0px 0px 10px #f14b66;
   border-radius: 10px;
-  margin: 25px 100px;
-  padding: 25px;
+  margin: 75px 100px;
+  padding: 80px 40px;
+  padding-bottom: 20px;
 }
 
 #vigenere .box .controls {
@@ -1187,13 +1189,47 @@
   color: white;
   position: absolute;
   bottom: -25px;
-  cursor: 'pointer';
+  cursor: pointer;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+#rsa .box .sections .input button:hover {
+  -webkit-transform: scaleX(1.05);
+          transform: scaleX(1.05);
 }
 
 #rsa .box .sections .output {
   border: 1px solid #F14B66;
   border-radius: 20px;
   padding: 40px;
+}
+
+#rsa .box .sections .output h2 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 72px;
+  text-align: center;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: black;
+}
+
+#rsa .box .sections .output input {
+  background: white;
+  border: none;
+  -webkit-box-shadow: inset 0px 0px 5px #F14B66;
+          box-shadow: inset 0px 0px 5px #F14B66;
+  border-radius: 5px;
+  width: 200px;
+  height: 50px;
+  color: black;
+  padding: 10px;
+  outline: none;
+}
+
+#rsa .box .sections .output .publicKey {
+  margin: 40px 0px;
 }
 
 #infoModalOpenBTB {
