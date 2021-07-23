@@ -53,11 +53,3 @@ window.onclick = function() {
         infoModal.style.display = "none"
     }
 }
-//--
-
-//Vigenere KEY only Letters
-function alphaOnly(event) {
-    var key = event.keyCode;
-    return ((key >= 65 && key <= 90) || key == 8);
-};
-//-
